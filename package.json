@@ -5,6 +5,7 @@
   "description": "this is a little server of my portfolio to receive messages",
   "main": "./src/server.js",
   "scripts": {
+    "start": "node .",
     "start:dev": "NODE_ENV='dev' nodemon .",
     "start:prod": "NODE_ENV='prod' node ."
   },
