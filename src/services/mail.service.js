@@ -16,11 +16,13 @@ class MailService {
     const mailTemplate = `
     <h1>You received a message from your portfolio!</h1>
   
-  <p>FROM: ${messageContent.name}</p>
+  <p>From: ${messageContent.name}</p>
   <br/>
   <p>E-Mail: ${messageContent.email}</p
   <br/>
-  <p>FROM: ${messageContent.message}</p>`;
+  <p>Message: ${messageContent.message}</p>
+  <p>Time: ${messageContent.timeStamp}</p>
+  `;
 
     const mailOptions = {
       from: "My Portfolio",

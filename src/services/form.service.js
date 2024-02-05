@@ -7,6 +7,7 @@ class FormService {
 
   async handleMessage(formData) {
     const messageContent = new FormMessage(formData.name, formData.email, formData.message)
+    console.log(messageContent);
 
     const result = await mailService.sendMailToNotifyMe(messageContent)
   
