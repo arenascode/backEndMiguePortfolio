@@ -35,7 +35,7 @@ function validatedMessage(message) {
     console.log(`error: ${error}`);
 
   if (error) {
-    throw new ValidationError(error.message, "El mensaje es muy corto. Cuentame un poco más de tu propuesta.");
+    throw new ValidationError(error.message, "The Message is very short. Please let me know a little more about your proposal");
   }
   return value;
 }
@@ -46,6 +46,6 @@ export class FormMessage {
     this.name = validatedName(name),
     this.email = validatedEmail(email),
     this.message = validatedMessage(message);
-    this.timeStamp = Date().toString();
+    this.timeStamp = Date().toLocaleString();
   }
 }
